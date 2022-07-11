@@ -1,5 +1,8 @@
 // @mui
 import { enUS, frFR, zhCN, viVN, arSD } from '@mui/material/locale';
+import { PATH_DASHBOARD } from './routes/paths';
+
+export const HOST_API = process.env.REACT_APP_HOST_API_KEY || '';
 
 // LAYOUT
 // ----------------------------------------------------------------------
@@ -25,6 +28,9 @@ export const ICON = {
   NAVBAR_ITEM: 22,
   NAVBAR_ITEM_HORIZONTAL: 20,
 };
+
+// ROOT PATH AFTER LOGIN SUCCESSFUL
+export const PATH_AFTER_LOGIN = PATH_DASHBOARD.root; // as '/dashboard/app'
 
 // SETTINGS
 // Please remove `localStorage` when you change settings.

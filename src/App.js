@@ -6,6 +6,7 @@ import ThemeProvider from './theme';
 import ThemeSettings from './components/settings';
 import ScrollToTop from './components/ScrollToTop';
 import { ProgressBarStyle } from './components/ProgressBar';
+import NotistackProvider from './components/NotistackProvider';
 import MotionLazyContainer from './components/animate/MotionLazyContainer';
 
 // ----------------------------------------------------------------------
@@ -15,9 +16,11 @@ export default function App() {
     <MotionLazyContainer>
       <ThemeProvider>
         <ThemeSettings>
-          <ProgressBarStyle />
-          <ScrollToTop />
-          <Router />
+          <NotistackProvider>
+            <ProgressBarStyle />
+            <ScrollToTop />
+            <Router />
+          </NotistackProvider>
         </ThemeSettings>
       </ThemeProvider>
     </MotionLazyContainer>
