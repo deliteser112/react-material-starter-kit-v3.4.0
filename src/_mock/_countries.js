@@ -237,7 +237,7 @@ export const countries = [
   { code: 'TZ', label: 'United Republic of Tanzania', phone: '255' },
   { code: 'UA', label: 'Ukraine', phone: '380' },
   { code: 'UG', label: 'Uganda', phone: '256' },
-  { code: 'US', label: 'United States', phone: '1' },
+  { code: 'US', label: 'United States of America', phone: '1' },
   { code: 'UY', label: 'Uruguay', phone: '598' },
   { code: 'UZ', label: 'Uzbekistan', phone: '998' },
   { code: 'VA', label: 'Holy See (Vatican City State)', phone: '379' },

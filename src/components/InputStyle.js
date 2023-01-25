@@ -20,7 +20,7 @@ const InputStyle = styled(TextField, {
       '&.Mui-focused': {
         boxShadow: theme.customShadows.z12,
         [theme.breakpoints.up('sm')]: {
-          width: stretchStart + 60,
+          width: stretchStart + 300,
         },
       },
     }),

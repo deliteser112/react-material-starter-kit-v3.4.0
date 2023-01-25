@@ -24,10 +24,8 @@ export default function RoleBasedGuard({ hasContent, roles, children }) {
   const tmpRoles = ['admin', 'leader'];
   // const currentRole = 'user';
   const currentRole = 'admin'; // admin;
-  console.log(hasContent, tmpRoles, currentRole, !tmpRoles.includes(currentRole));
 
   if (typeof tmpRoles !== 'undefined' && !tmpRoles.includes(currentRole)) {
-    console.log('Here is roles')
     return !hasContent ? (
       <Container component={MotionContainer} sx={{ textAlign: 'center' }}>
         <m.div variants={varBounce().in}>

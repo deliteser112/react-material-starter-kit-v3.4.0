@@ -6,10 +6,10 @@ import DashboardLayout from '../layouts/dashboard';
 import LogoOnlyLayout from '../layouts/LogoOnlyLayout';
 // guards
 import GuestGuard from '../guards/GuestGuard';
-import AuthGuard from '../guards/AuthGuard';
-import RoleBasedGuard from '../guards/RoleBasedGuard';
+// import AuthGuard from '../guards/AuthGuard';
+// import RoleBasedGuard from '../guards/RoleBasedGuard';
 // config
-import { PATH_AFTER_LOGIN } from '../config';
+// import { PATH_AFTER_LOGIN } from '../config';
 
 // components
 import LoadingScreen from '../components/LoadingScreen';
@@ -61,7 +61,7 @@ export default function Router() {
       element: <MainLayout />,
       children: [
         { element: <HomePage />, index: true },
-        { path: 'about-us', element: <About /> }
+        { path: 'about-us', element: <About /> },
       ],
     },
 
@@ -114,5 +114,7 @@ const PageSix = Loadable(lazy(() => import('../pages/PageSix')));
 const NotFound = Loadable(lazy(() => import('../pages/Page404')));
 
 // MAIN
-const HomePage = Loadable(lazy(() => import('../pages/Faqs')));
+const HomePage = Loadable(lazy(() => import('../pages/Home')));
 const About = Loadable(lazy(() => import('../pages/About')));
+// const Maintenance = Loadable(lazy(() => import('../pages/Maintenance')));
+// const ComingSoon = Loadable(lazy(() => import('../pages/ComingSoon')));
