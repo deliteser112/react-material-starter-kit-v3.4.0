@@ -18,7 +18,7 @@ const RootStyle = styled('div')(({ theme }) => ({
 
 export default function Faqs() {
   return (
-    <Page title="Faqs">
+    <Page title="Home">
       <RootStyle>
         <FaqsHero />
 

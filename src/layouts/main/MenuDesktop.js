@@ -105,7 +105,6 @@ function IconBullet({ type = 'item' }) {
 // ----------------------------------------------------------------------
 
 MenuDesktopItem.propTypes = {
-  isHome: PropTypes.bool,
   isOffset: PropTypes.bool,
   isOpen: PropTypes.bool,
   onClose: PropTypes.func,
@@ -117,7 +116,7 @@ MenuDesktopItem.propTypes = {
   }),
 };
 
-function MenuDesktopItem({ item, isHome, isOpen, isOffset, onOpen, onClose }) {
+function MenuDesktopItem({ item, isOpen, isOffset, onOpen, onClose }) {
   const { title, path, children } = item;
 
   if (children) {
@@ -129,7 +128,6 @@ function MenuDesktopItem({ item, isHome, isOpen, isOffset, onOpen, onClose }) {
             display: 'flex',
             cursor: 'pointer',
             alignItems: 'center',
-            // ...(isHome && { color: 'common.white' }),
             ...(isOffset && { color: 'text.primary' }),
             ...(isOpen && { opacity: 0.48 }),
           }}
@@ -241,7 +239,6 @@ function MenuDesktopItem({ item, isHome, isOpen, isOffset, onOpen, onClose }) {
         target="_blank"
         rel="noopener"
         sx={{
-          // ...(isHome && { color: 'common.white' }),
           ...(isOffset && { color: 'text.primary' }),
         }}
       >
@@ -256,7 +253,6 @@ function MenuDesktopItem({ item, isHome, isOpen, isOffset, onOpen, onClose }) {
       component={RouterLink}
       end={path === '/'}
       sx={{
-        // ...(isHome && { color: 'common.white' }),
         ...(isOffset && { color: 'text.primary' }),
         '&.active': {
           color: 'primary.main',
